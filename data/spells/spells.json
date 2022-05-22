@@ -3,6 +3,7 @@
 		"name":"Haste",
 		"words":"utani hur",
 		"script": "Haste",
+		"description": "",
 		"mana": 60,
 		"cooldown":"1000",
 		"level":8
@@ -11,6 +12,7 @@
 		"name":"Strong Haste",
 		"words":"utani gran hur",
 		"script": "StrongHaste",
+		"description": "",
 		"vocations":[1,2],
 		"mana": 60,
 		"cooldown":"1000",
@@ -19,6 +21,7 @@
 		"name":"Intense Healing",
 		"words":"exura gran",
 		"script": "IntenseHealing",
+		"description": "",
 		"mana": 0,
 		"cooldown":"1000",
 		"level":8
@@ -27,6 +30,7 @@
 		"name":"Invisibility",
 		"words":"utana vid",
 		"script": "Invisibility",
+		"description": "",
 		"mana": 60,
 		"cooldown":"1000",
 		"level":8
@@ -34,6 +38,7 @@
 	{
 		"name":"Food",
 		"words":"exevo pan",
+		"description": "",
 		"script": "Food",
 		"mana": 0,
 		"cooldown":"1000",
@@ -43,6 +48,7 @@
 		"name":"Create Item",
 		"words":"/i",
 		"script": "ItemCreator",
+		"description": "Create an item on the map or in the player's backpack. Example: /i 2160",
 		"mana": 0,
 		"cooldown":"0",
 		"level":1
@@ -51,6 +57,7 @@
 		"name":"Create Monster",
 		"words":"/m",
 		"script": "MonsterCreator",
+		"description": "Summon a monster. Example: /m Cyclops",
 		"mana": 0,
 		"cooldown":"0",
 		"level":1
@@ -58,6 +65,7 @@
 		"name":"Up",
 		"words":"/up",
 		"script": "UpDownCommand",
+		"description": "Go up one floor. Exemple: /up",
 		"mana": 0,
 		"cooldown":"0",
 		"level":1
@@ -65,14 +73,16 @@
 		"name":"Down",
 		"words":"/down",
 		"script": "UpDownCommand",
+		"description": "Go down one floor. Exemple: /down",
 		"mana": 0,
 		"cooldown":"0",
 		"level":1
-	},
+	}
 	,{
 		"name":"Teleport",
 		"words":"/a",
 		"script": "TeleportCommand",
+		"description": "Teleport forward the number of tiles entered. Example: /a 100",
 		"mana": 0,
 		"cooldown":"0",
 		"level":1
@@ -81,6 +91,7 @@
 		"name":"Hide",
 		"words":"/hide",
 		"script": "HideCommand",
+		"description": "Hide player. Example: /hide",
 		"mana": 0,
 		"cooldown":"0",
 		"level":1
@@ -89,6 +100,7 @@
 		"name":"Reload",
 		"words":"/reload",
 		"script": "ReloadCommand",
+		"description": "Reload modules. Example: /reload vocations",
 		"mana": 0,
 		"cooldown":"0",
 		"level":1
@@ -96,7 +108,17 @@
 	,{
 		"name":"PullPlayer",
 		"words":"/c",
+		"description": "Pull player near to God. Example: /c Knight Sample",
 		"script": "PullPlayerCommand",
+		"mana": 0,
+		"cooldown":"0",
+		"level":1
+	}
+	,{
+		"name":"List of Commands",
+		"words":"/list",
+		"script": "ListCommandsCommand",
+		"description": "List of commands. Example: /list",
 		"mana": 0,
 		"cooldown":"0",
 		"level":1
