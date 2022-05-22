@@ -52,6 +52,8 @@ public class Paper : MovableItem, IReadable, IUsable, IPickupable
 
     public static bool IsApplicable(IItemType type)
     {
-        return type.Flags.Contains(ItemFlag.Readable);
+        var s = type.Flags.Contains(ItemFlag.Readable);
+
+        return s;
     }
 }

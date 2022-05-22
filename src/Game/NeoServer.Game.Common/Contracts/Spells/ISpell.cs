@@ -11,6 +11,7 @@ public interface ISpell
     ushort Mana { get; set; }
     ushort MinLevel { get; set; }
     string Name { get; set; }
+    string Description { get; set; }
     uint Cooldown { get; set; }
     bool ShouldSay { get; }
     byte[] Vocations { get; set; }

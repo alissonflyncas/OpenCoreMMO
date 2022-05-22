@@ -6,7 +6,7 @@ namespace NeoServer.Game.Combat.Spells;
 
 public class SpellList
 {
-    private static Dictionary<string, ISpell> Spells { get; } = new(StringComparer.InvariantCultureIgnoreCase);
+    public static Dictionary<string, ISpell> Spells { get; private set; } = new(StringComparer.InvariantCultureIgnoreCase);
 
     public static void Add(string words, ISpell spell)
     {

@@ -52,6 +52,7 @@ public class SpellLoader
                 if (Activator.CreateInstance(type, true) is not ISpell spellInstance) continue;
 
                 spellInstance.Name = spell["name"].ToString();
+                spellInstance.Description = spell["description"].ToString();
                 spellInstance.Cooldown = Convert.ToUInt32(spell["cooldown"]);
                 spellInstance.Mana = Convert.ToUInt16(spell["mana"]);
                 spellInstance.MinLevel = Convert.ToUInt16(spell["level"]);

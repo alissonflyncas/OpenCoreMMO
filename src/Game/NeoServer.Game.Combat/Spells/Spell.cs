@@ -14,6 +14,7 @@ public abstract class BaseSpell : ISpell
 
     public abstract ConditionType ConditionType { get; }
     public virtual string Name { get; set; }
+    public virtual string Description { get; set; }
     public abstract EffectT Effect { get; }
     public virtual ushort Mana { get; set; }
     public virtual ushort MinLevel { get; set; } = 0;
